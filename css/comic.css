@@ -1,0 +1,78 @@
+/* Comic Base Template Layout */
+body { background-color:#332A1A; background-image:url('../images/background.png'); background-repeat:repeat-y; background-position:center; }
+
+.title, .navigation a, .navleft, .navright { font-family: 'Bangers', arial, serif; font-size:18px; text-shadow: 4px 4px 4px #aaa;  text-decoration:none;  }
+.title { font-size:48px; width:100%; text-align:center;}
+
+.main { width: 960px; height:100%; margin:0 auto; background-position: 0px 40px; background-repeat:no-repeat; }
+
+.navigation li { float:left; display:block; }
+.navigation { padding: 20px 0 30px 100px; text-align: center; opacity: 0.8; -moz-opacity: 0.8; filter:alpha(opacity=80); }
+.navigation li { padding: 5px 0 45px 0; margin: 0 10px; width: 100px; }
+.navigation li.current { padding: 5px 0 100px 0; }
+.navigation li:nth-child(1) { background-image: url('../images/nav1.png'); }
+.navigation li:nth-child(2) { background-image: url('../images/nav2.png'); }
+.navigation li:nth-child(3) { background-image: url('../images/nav3.png'); }
+
+.header { height:150px; width:100%; }
+.header .title { float:left; padding: 20px 0px 0px 0px; }
+
+.content { height:1020px;	margin:0 auto; }
+.navleft, .navright { width: 50px; height:100%; font-size:42px; }
+.navleft  { float: left; text-align:right; }
+.navright { float: right; text-align:right; }
+
+.navleft  a { width: 100%; height:100%; display:block; text-decoration:none; color:black;}
+.navright a { width: 100%; height:100%; display:block; text-decoration:none; color:black;}
+
+.footer { width: 100%; height: 150px; }
+.footleft { width: 50%; height:100%; float: left; }
+.footright { width: 50%; height: 100%; float: left; }
+
+/* Comic Main Template Layout */
+#cover { background-image: url('../images/cover.png'); }
+#cover .header { background: transparent url('../images/header.png') no-repeat bottom center; height: 350px; }
+#cover .content { background: transparent url('../images/zombie.png') no-repeat bottom center; height: 840px; }
+#cover .title{ opacity:0; }
+#cover .navright { width:250px; padding-top:50px; }
+#cover .navright li { text-align: center; margin:25px 25px 50px 25px; }
+#cover .navright li a { width: 100%; height:200px; display:inline-block; color:transparent; background:transparent url('../images/navbutton.png') no-repeat center top; -webkit-transition: all .2s ease-in-out; }
+#cover .navright li a:hover { -webkit-transform: scale(1.2); }
+#cover .navleft { width:200px; padding-top:50px; }
+#cover .navleft li { text-align: center; margin:25px; }
+#cover .navleft li a { width:100%; height:85px; display:inline-block; color:transparent; background-position: center 20px; background-repeat:no-repeat; -webkit-transition: all .2s ease-in-out; }
+#cover .navleft li a:hover { -webkit-transform: scale(1.2); }
+#cover .navleft #facebook { background-image: url('../images/facebook.png'); }
+#cover .navleft #twitter { background-image: url('../images/twitter.png'); }
+#cover .navleft #blogger { background-image: url('../images/blogger.png'); }
+
+/* Comic Gallery Entry Template Layout */
+#gallery_entry { background-image: url('../images/sheet.png'); }
+#gallery_entry .gallery_entry_container { text-align:center; }
+#gallery_entry .spotlight { width:100%; height:400px; margin:0 auto; }
+#gallery_entry .spotlight img { height:350px; }
+#gallery_entry .section { 
+ width: 220px; 
+ border: 8px solid #111; 
+ margin: 15px; 
+ padding: 5px; 
+ display:inline-block; 
+}
+
+/* Comic Gallery Template Layout */
+#gallery { background-image: url('../images/sheet.png'); }
+#gallery .gallery_container { opacity: 0.94; -moz-opacity: 0.94; filter:alpha(opacity=94); }
+#gallery .content li { display:inline; float:left; }
+#gallery .imagelink img { border: 8px solid #111; margin: 10px; }
+
+
+/* Comic Spundsays Template Layout */
+#spundsays { background-image: url('../images/sheet.png'); }
+#spundsays .spundsays_container { text-align:center; }
+#spundsays .section { 
+ width: 250px; 
+ border: 8px solid #111; 
+ margin: 15px; 
+ padding: 5px; 
+ display:inline-block; 
+}
